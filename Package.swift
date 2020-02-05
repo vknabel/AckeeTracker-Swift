@@ -14,10 +14,10 @@ let package = Package(
   dependencies: [
     // Dependencies declare other packages that this package depends on.
     // Dev deps
-//    .package(url: "https://github.com/vknabel/Archery.git", from: "0.3.0"),  // dev
-//    .package(url: "https://github.com/shibapm/Komondor.git", from: "1.0.4"),  // dev
-//    .package(url: "https://github.com/apple/swift-format.git", .branch("swift-5.1-branch")),  // dev
-//    .package(url: "https://github.com/f-meloni/Rocket.git", from: "0.1.0"),  // dev
+    .package(url: "https://github.com/vknabel/Archery.git", from: "0.3.0"),  // dev
+    .package(url: "https://github.com/shibapm/Komondor.git", from: "1.0.4"),  // dev
+    .package(url: "https://github.com/apple/swift-format.git", .branch("swift-5.1-branch")),  // dev
+    .package(url: "https://github.com/f-meloni/Rocket.git", from: "0.1.0"),  // dev
   ],
   targets: [
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
