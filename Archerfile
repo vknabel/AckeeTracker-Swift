@@ -1,7 +1,7 @@
 name: AckeeTracker
 scripts:
   format: >-
-    swift run swift-format
+    swift run --skip-build swift-format
     --mode format
     --configuration .swift-format
     --in-place
