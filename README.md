@@ -49,6 +49,15 @@ ackee.record("deep/linking/url")
 
 > **Note:** As of now, recording advanced attributes isn't possible yet, but may follow in future.
 
+## Contributing
+
+```
+$ git clone https://github.com/vknabel/AckeeTracker-Swift.git
+$ cd AckeeTracker-Swift
+$ swift run archery setup
+# This might take a while to complete
+```
+
 ## License
 
 AckeeTracker is available under the [MIT](./LICENSE) license.

@@ -16,3 +16,8 @@ scripts:
     else
       echo Skip: Jazzy not available
     fi
+  setup:
+    run: [bundle, komondor]
+    scripts:
+      komondor: swift run --skip-build --skip-update komondor install
+      bundle: bundle install
