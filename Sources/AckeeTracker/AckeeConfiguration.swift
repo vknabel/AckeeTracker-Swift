@@ -17,6 +17,9 @@ public struct AckeeConfiguration {
   /// Disables all reporting.
   public let disabled: Bool
 
+  /// Includes addition information about the user's system.
+  public let detailed: Bool
+
   /// Creates a new Ackee Tracker configuration.
   ///
   /// - Parameters:
@@ -26,15 +29,18 @@ public struct AckeeConfiguration {
   ///               Note that you need to provide an actual domain.
   ///               Just proividing an app scheme is not sufficient.
   ///     - disabled: Disables all reporting.
+  ///     - detailed: Includes addition information about the user's system.
   public init(
     domainId: String,
     serverUrl: URL,
     appUrl: URL,
-    disabled: Bool = false
+    disabled: Bool = false,
+    detailed: Bool = false
   ) {
     self.domainId = domainId
     self.serverUrl = serverUrl
     self.appUrl = appUrl
     self.disabled = disabled
+    self.detailed = detailed
   }
 }

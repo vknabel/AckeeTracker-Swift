@@ -1,7 +1,7 @@
 name: AckeeTracker
 scripts:
   format: >-
-    swift run --skip-build swift-format
+    swift run --skip-update swift-format
     --mode format
     --configuration .swift-format
     --in-place
@@ -19,5 +19,5 @@ scripts:
   setup:
     run: [bundle, komondor]
     scripts:
-      komondor: swift run --skip-build --skip-update komondor install
+      komondor: swift run --skip-update komondor install
       bundle: bundle install

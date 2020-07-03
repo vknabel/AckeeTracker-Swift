@@ -6,13 +6,13 @@
     //   `swift test --generate-linuxmain`
     // to regenerate.
     static let __allTests__AckeeTrackerTests = [
-      ("testPerformsRequest", testPerformsRequest),
+      ("testPerformsRequest", testPerformsRequest)
     ]
   }
 
   public func __allTests() -> [XCTestCaseEntry] {
     return [
-      testCase(AckeeTrackerTests.__allTests__AckeeTrackerTests),
+      testCase(AckeeTrackerTests.__allTests__AckeeTrackerTests)
     ]
   }
 #endif

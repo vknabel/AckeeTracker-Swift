@@ -5,18 +5,19 @@ import PackageDescription
 
 let package = Package(
   name: "AckeeTracker",
+  platforms: [.macOS(.v10_12), .iOS(.v10), .tvOS(.v10), .watchOS(.v3)],
   products: [
     // Products define the executables and libraries produced by a package, and make them visible to other packages.
     .library(
       name: "AckeeTracker",
-      targets: ["AckeeTracker"]),
+      targets: ["AckeeTracker"])
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
     // Dev deps
     .package(url: "https://github.com/vknabel/Archery.git", from: "0.3.0"),  // dev
     .package(url: "https://github.com/shibapm/Komondor.git", from: "1.0.4"),  // dev
-    .package(url: "https://github.com/apple/swift-format.git", .branch("swift-5.1-branch")),  // dev
+    .package(url: "https://github.com/apple/swift-format.git", .branch("swift-5.2-branch")),  // dev
     .package(url: "https://github.com/f-meloni/Rocket.git", from: "0.1.0"),  // dev
   ],
   targets: [
@@ -41,8 +42,8 @@ let package = Package(
         "swift test",
         "swift run archery format",
         "swift run archery docs",
-        "git add ."
-      ]
-    ],
+        "git add .",
+      ],
+    ]
   ]).write()
 #endif

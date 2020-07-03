@@ -11,7 +11,7 @@ public struct AckeeDependencies {
   public static func prod(
     urlSession: URLSession = URLSession.shared
   ) -> AckeeDependencies {
-    return .init(
+    .init(
       report: { print("Ackee.error:", $0) },
       fetch: {
         let task = urlSession.dataTask(with: $0, completionHandler: $1)

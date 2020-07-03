@@ -17,7 +17,8 @@ extension AckeeServer {
   func post(attributes: Attributes, receive: @escaping (Record) -> Void) {
     guard
       let request = createRequest(
-        "POST", ["domains", configuration.domainId, "records"], attributes: attributes)
+        "POST", ["domains", configuration.domainId, "records"], attributes: attributes
+      )
     else { return }
     dependencies.fetch(
       request,
@@ -28,7 +29,7 @@ extension AckeeServer {
 
   func update(record: Record) {
     dependencies.fetch(
-      createRequest("POST", ["domains", configuration.domainId, "records", record.id])
+      createRequest("PATCH", ["domains", configuration.domainId, "records", record.id])
     ) { _, _, _ in }
   }
 
@@ -54,7 +55,8 @@ extension AckeeServer {
   ) -> URLRequest? {
     do {
       return createRequest(
-        method, components, body: try AckeeDependencies.apiEncoder.encode(attributes))
+        method, components, body: try AckeeDependencies.apiEncoder.encode(attributes)
+      )
     } catch {
       dependencies.report(error)
       return nil

@@ -1,6 +1,47 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/vknabel/dev/AckeeTracker-Swift/Sources/AckeeTracker/AckeeDependencies.swift",
+      "line": 26,
+      "symbol": "AckeeDependencies.fetch(_:of:receive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vknabel/dev/AckeeTracker-Swift/Sources/AckeeTracker/AckeeServer.swift",
+      "line": 17,
+      "symbol": "AckeeServer.post(attributes:receive:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vknabel/dev/AckeeTracker-Swift/Sources/AckeeTracker/AckeeServer.swift",
+      "line": 30,
+      "symbol": "AckeeServer.update(record:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vknabel/dev/AckeeTracker-Swift/Sources/AckeeTracker/AckeeTracker+SwiftUI.swift",
+      "line": 6,
+      "symbol": "View.trackAppearence(_:using:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vknabel/dev/AckeeTracker-Swift/Sources/AckeeTracker/DurationRecorder.swift",
+      "line": 3,
+      "symbol": "DurationRecorder",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vknabel/dev/AckeeTracker-Swift/Sources/AckeeTracker/DurationRecorder.swift",
+      "line": 39,
+      "symbol": "DurationRecorder",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    }
   ],
-  "source_directory": "/Users/vknabel/Developer/vknabel/AckeeSwift"
+  "source_directory": "/Users/vknabel/dev/AckeeTracker-Swift"
 }
